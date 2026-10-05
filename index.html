@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ONE AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+   
+    <aside class="sidebar" id="sidebar">
+
+        <div class="brand">
+            <div class="logo">✦</div>
+            <span>ONE AI</span>
+        </div>
+
+        <button class="new-chat" id="newChat">
+            <span>＋</span>
+            New chat
+        </button>
+
+        <div class="history-title">Recent chats</div>
+
+        <div id="history" class="history"></div>
+
+        <div class="sidebar-bottom">
+
+            <button id="themeBtn" class="side-btn">
+                🌙
+                <span>Theme</span>
+            </button>
+
+            <button id="clearBtn" class="side-btn">
+                🗑️
+                <span>Clear chats</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <header class="topbar">
+
+            <button id="menuBtn" class="menu-btn">
+                ☰
+            </button>
+
+            <div class="mobile-logo">
+                ✦ ONE AI
+            </div>
+
+            <div class="model">
+                <span class="status"></span>
+                ONE AI
+                <small>Gemini 3.8 Flash</small>
+            </div>
+
+        </header>
+
+
+        <!-- WELCOME -->
+        <section id="welcome" class="welcome">
+
+            <div class="welcome-logo">✦</div>
+
+            <h1>Hello, I'm <span>ONE AI</span></h1>
+
+            <p>
+                Ask me anything. I can help you learn, code,
+                analyze images and much more.
+            </p>
+
+            <div class="suggestions">
+
+                <button class="suggestion">
+                    💡 Explain something to me
+                </button>
+
+                <button class="suggestion">
+                    💻 Help me write code
+                </button>
+
+                <button class="suggestion">
+                    📚 Help with homework
+                </button>
+
+                <button class="suggestion">
+                    🖼️ Analyze an image
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- CHAT -->
+        <section id="chat" class="chat"></section>
+
+
+        <!-- IMAGE PREVIEW -->
+        <div id="imagePreview" class="image-preview hidden">
+
+            <img id="previewImg">
+
+            <button id="removeImage">×</button>
+
+        </div>
+
+
+        <!-- INPUT -->
+        <div class="input-area">
+
+            <div class="input-box">
+
+                <input
+                    type="file"
+                    id="imageInput"
+                    accept="image/*"
+                    hidden
+                >
+
+                <button
+                    class="icon-btn"
+                    id="imageBtn"
+                    title="Add image"
+                >
+                    ＋
+                </button>
+
+                <textarea
+                    id="messageInput"
+                    placeholder="Ask ONE AI anything..."
+                    rows="1"
+                ></textarea>
+
+                <button
+                    class="send-btn"
+                    id="sendBtn"
+                    title="Send"
+                >
+                    ➤
+                </button>
+
+            </div>
+
+            <div class="input-info">
+                ONE AI can make mistakes. Check important information.
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
